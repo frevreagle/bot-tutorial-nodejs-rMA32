@@ -1,6 +1,20 @@
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
-
+var arrBrettFacts = new Array(13);
+  arrBrettFacts[0] = "Brett Gladden is one handsome motherfucker.";
+  arrBrettFacts[1] = "Brett Gladden is the master of the BBQ Smoker.";
+  arrBrettFacts[2] = "Brett Gladden holds the record for being awesome at things.";
+  arrBrettFacts[3] = "Brett Gladden is the keeper of rabbits.";
+  arrBrettFacts[4] = "Brett Gladden only lets Benny win because he feels bad.";
+  arrBrettFacts[5] = "Brett Gladden was once mistaken for a fat Val Kilmer.";
+  arrBrettFacts[6] = "Brett Gladden owns several televisions.";
+  arrBrettFacts[7] = "Brett Gladden can smoke a cigarette in one drag.";
+  arrBrettFacts[8] = "Brett Gladden owns a lock of Zach Mettenberger's hair.";
+  arrBrettFacts[9] = "Brett Gladden has made the playoffs only once in PTSL.";
+  arrBrettFacts[10] = "Brett Gladden fucks.";
+  arrBrettFacts[11] = "Brett Gladden loves Mondays.";
+  arrBrettFacts[12] = Brett Gladden's middle name is a mystery, even to him.";
+var BrettRandomNumber = (Math.round((Math.random()*8)+1))
 var botID = process.env.BOT_ID;
 
 function respond() {
@@ -62,7 +76,7 @@ function respond() {
   } 
     else if(request.text && botRegexbg.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Brett Gladden is one handsome motherfucker.");
+    postMessage(arrBrettFacts[BrettRandomNumber]);
     this.res.end();
   } 
   else if(request.text && botRegexSlam.test(request.text)) {

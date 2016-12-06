@@ -8,7 +8,7 @@ function respond() {
       botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/; botRegexRoll = /^\/roll/;
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
-      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; botRegexCat = /^\/catfish/; 
+      botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; botRegexCat = /^\/catfish/; botRegexCool = /^\/cool/;
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
@@ -173,6 +173,11 @@ function respond() {
   else if(request.text && botRegexRoll.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://media.giphy.com/media/RQMkfKODe8Okw/giphy.gif");
+    this.res.end();
+  }
+  else if(request.txt && botRegexCool.test(request.txt)) {
+    this.res.writehead(200);
+    postMessage("https://media.giphy.com/media/3o7TKvEFDGnY1Gzw6A/giphy.gif");
     this.res.end();
   }
   else if(request.text && botRegexSiege.test(request.text)) {

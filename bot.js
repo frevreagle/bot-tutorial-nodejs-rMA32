@@ -97,7 +97,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://http://daddyleagues.com/ptsl/rules");
+    postMessage("http://daddyleagues.com/ptsl/rules");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {

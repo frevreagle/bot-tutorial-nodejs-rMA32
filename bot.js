@@ -92,7 +92,7 @@ function respond() {
   } 
     else if(request.text && botRegexbg.test(request.text)) {
     this.res.writeHead(200);
-    var BrettRandomNumber = (Math.round((Math.random()*8)+1))
+    var BrettRandomNumber = (Math.round((Math.random()*28)+1))
     postMessage(arrBrettFacts[BrettRandomNumber]);
     this.res.end();
   } 

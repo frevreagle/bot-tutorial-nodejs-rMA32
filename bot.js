@@ -14,7 +14,7 @@ var arrBrettFacts = new Array(13);
   arrBrettFacts[10] = "Brett Gladden fucks.";
   arrBrettFacts[11] = "Brett Gladden loves Mondays.";
   arrBrettFacts[12] = "Brett Gladdens middle name is a mystery, even to him.";
-var BrettRandomNumber = (Math.round((Math.random()*8)+1))
+
 var botID = process.env.BOT_ID;
 
 function respond() {
@@ -76,6 +76,7 @@ function respond() {
   } 
     else if(request.text && botRegexbg.test(request.text)) {
     this.res.writeHead(200);
+    var BrettRandomNumber = (Math.round((Math.random()*8)+1))
     postMessage(arrBrettFacts[BrettRandomNumber]);
     this.res.end();
   } 

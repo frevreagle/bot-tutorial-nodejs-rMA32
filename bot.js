@@ -9,7 +9,7 @@ function respond() {
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; botRegexCat = /^\/catfish/; botRegexCool = /^\/cool/; botRegexBouncy = /^\/bouncy/;
-      botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/; botRegexUMadBro = /^\/umadbro/;
+      botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/; botRegexUMadBro = /^\/umadbro/; botRegexTwi = /^\/tw/i;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/;
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/;
@@ -23,6 +23,11 @@ function respond() {
     postMessage(cool());
     this.res.end();
   }
+  else if(request.text && botRegexTwi.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://www.twitch.tv/"+request.text.substring(8,request.text.length));
+    this.res.end();
+  } 
   else if(request.text && botRegexSlut.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");

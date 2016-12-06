@@ -1,6 +1,6 @@
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
-var arrBrettFacts = new Array(17);
+var arrBrettFacts = new Array(28);
   arrBrettFacts[0] = "Brett Gladden is one handsome motherfucker.";
   arrBrettFacts[1] = "Brett Gladden is the master of the BBQ Smoker.";
   arrBrettFacts[2] = "Brett Gladden holds the record for being awesome at things.";
@@ -19,6 +19,18 @@ var arrBrettFacts = new Array(17);
   arrBrettFacts[14] = "Brett Gladden can like, totally delete the league. So like, don't upset him";
   arrBrettFacts[15] = "Brett Gladden is a friend of the mexicans.";
   arrBrettFacts[16] = "Brett Gladden's only fear is fear itself. And spiders.";
+  arrBrettFacts[17] = "Brett Gladden is a fan of the ladies.";
+  arrBrettFacts[18] = "Brett Gladden was named after George Brett. Thank god his name isn't George Gladden";
+  arrBrettFacts[19] = "Brett Gladden tries to see the best in everybody. Except for you.";
+  arrBrettFacts[20] = "Brett Gladden watches you poop.";
+  arrBrettFacts[21] = "Brett Gladden owns the actual Tecmo Super Bowl.";
+  arrBrettFacts[22] = "Brett Gladden loves you.";
+  arrBrettFacts[23] = "Brett Gladden is an excellent dancer.";
+  arrBrettFacts[24] = "Brett Gladden is a happy camper.";
+  arrBrettFacts[25] = "Brett Gladden was once bitten by a radioactive chipmunk. Now he has superpowers.";
+  arrBrettFacts[26] = "Brett Gladden can grow an awesome beard..";
+  arrBrettFacts[27] = "Brett Gladden plays a mean bass guitar";
+
 var botID = process.env.BOT_ID;
 
 function respond() {

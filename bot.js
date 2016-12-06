@@ -167,7 +167,7 @@ function respond() {
   }
   else if(request.text && botRegexRoll.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://photobucket.com/images/eye%20roll%20gif");
+    postMessage("https://media.giphy.com/media/RQMkfKODe8Okw/giphy.gif");
     this.res.end();
   }
   else if(request.text && botRegexSiege.test(request.text)) {

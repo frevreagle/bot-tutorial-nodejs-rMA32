@@ -9,10 +9,10 @@ function respond() {
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; botRegexCat = /^\/catfish/; botRegexCool = /^\/cool/; botRegexBouncy = /^\/bouncy/;
-      botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/; botRegexUMadBro = /^\/umadbro/; botRegexBoo1 = /^\/boo1/; botRegexBoo2 = /^\/boo2/; botRegexBoo3 = /^\/boo3/;
+      botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/; botRegexUMadBro = /^\/umadbro/; botRegexBoo = /^\/boo/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/;
-      botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/; botRegexGolf = /^\/Golf/; 
-      botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/;
+      botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/; botRegexGolf = /^\/golf/; 
+      botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/; botRegexEat = /^\/eat/; 
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
       boo1 = 'https://media.giphy.com/media/iSxPmDWr97248/giphy.gif'; boo2 = 'https://media.giphy.com/media/l0MYwwrc7uYibZVn2/giphy.gif';
@@ -33,6 +33,11 @@ function respond() {
   else if(request.text && botRegexGolf.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://media0.giphy.com/media/21ut9WYriQtuE/giphy.gif");
+    this.res.end();
+  } 
+    else if(request.text && botRegexEat.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://imgur.com/JokjDsD.gif");
     this.res.end();
   } 
   else if(request.text && botRegexStop.test(request.text)) {
@@ -207,19 +212,14 @@ function respond() {
       postMessage(siege2);
     this.res.end();
   }
-  else if(request.text && botRegexBoo1.test(request.text)) {
+  else if(request.text && botRegexBoo.test(request.text)) {
     this.res.writeHead(200);
-    postMessage(boo1);
-    this.res.end();
-  }
-  else if(request.text && botRegexBoo2.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage(boo2);
-    this.res.end();
-  }
-  else if(request.text && botRegexBoo3.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage(boo3);
+    if(0.6 >= Math.random() > 0.3)
+      postMessage(boo1);
+    else if(Math.random() >0.6)
+      postMessage(boo3)
+    else
+      postMessage(boo2);
     this.res.end();
   }
   else {

@@ -127,7 +127,7 @@ function respond() {
   } 
   else if(request.text && botRegexSb.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://www.reddit.com/r/maddenall32");
+    postMessage("Season 1: Truckfarm, Season 2: JP");
     this.res.end();
   } 
   else if(request.text && botRegexSh.test(request.text)) {
@@ -137,7 +137,7 @@ function respond() {
   } 
   else if(request.text && botRegexWk.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1kJqQWCq3RKiTrd4f71FFNKr-Y0ppJzjk0fSF0rP6Bto/edit?usp=sharing");
+    postMessage("http://daddyleagues.com/ptsl/schedules");
     this.res.end();
   } 
   else if(request.text && botODB.test(request.text)) {
@@ -162,7 +162,7 @@ function respond() {
   }
   else if(request.text && botRegexSchedule.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/spreadsheets/d/1EORExkB6HNLZhi22mRo2Xmo6Yx90Em2rGNAYlAdjTeI/edit?usp=drive_web");
+    postMessage("http://daddyleagues.com/ptsl/schedules");
     this.res.end();
   }
   

@@ -1,6 +1,6 @@
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
-var arrBrettFacts = new Array(28);
+var arrBrettFacts = new Array(39);
   arrBrettFacts[0] = "Brett Gladden is one handsome motherfucker.";
   arrBrettFacts[1] = "Brett Gladden is the master of the BBQ Smoker.";
   arrBrettFacts[2] = "Brett Gladden holds the record for being awesome at things.";
@@ -30,6 +30,17 @@ var arrBrettFacts = new Array(28);
   arrBrettFacts[25] = "Brett Gladden was once bitten by a radioactive chipmunk. Now he has superpowers.";
   arrBrettFacts[26] = "Brett Gladden can grow an awesome beard..";
   arrBrettFacts[27] = "Brett Gladden plays a mean bass guitar";
+  arrBrettFacts[28] = "Brett Gladden is a fan of the banjo.";
+  arrBrettFacts[29] = "Brett Gladden once flushed a whole funnel cake down a toilet";
+  arrBrettFacts[30] = "Brett Gladden won't eat horse. But he will eat horsey sauce";
+  arrBrettFacts[31] = "Brett Gladden turned down a role as a disney princess";
+  arrBrettFacts[32] = "Brett Gladden eats spicy wings. Regrets it later.";
+  arrBrettFacts[33] = "Brett Gladden is probably pooping right now.";
+  arrBrettFacts[34] = "Brett Gladden just says no.";
+  arrBrettFacts[35] = "Brett Gladden's favorite musical group is Hall and Oates.";
+  arrBrettFacts[36] = "Brett Gladden makes your dreams come true.";
+  arrBrettFacts[37] = "Brett Gladden is not a fan of baseball.";
+  arrBrettFacts[38] = "Brett Gladden thinks hockey is just ice soccer.";
 
 var botID = process.env.BOT_ID;
 
@@ -92,7 +103,7 @@ function respond() {
   } 
     else if(request.text && botRegexbg.test(request.text)) {
     this.res.writeHead(200);
-    var BrettRandomNumber = (Math.round((Math.random()*28)+1))
+    var BrettRandomNumber = (Math.round((Math.random()*39)+1))
     postMessage(arrBrettFacts[BrettRandomNumber]);
     this.res.end();
   } 

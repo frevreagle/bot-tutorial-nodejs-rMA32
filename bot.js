@@ -13,7 +13,7 @@ var arrBrettFacts = new Array(13);
   arrBrettFacts[9] = "Brett Gladden has made the playoffs only once in PTSL.";
   arrBrettFacts[10] = "Brett Gladden fucks.";
   arrBrettFacts[11] = "Brett Gladden loves Mondays.";
-  arrBrettFacts[12] = Brett Gladden's middle name is a mystery, even to him.";
+  arrBrettFacts[12] = "Brett Gladdens middle name is a mystery, even to him.";
 var BrettRandomNumber = (Math.round((Math.random()*8)+1))
 var botID = process.env.BOT_ID;
 

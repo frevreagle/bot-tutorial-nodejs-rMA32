@@ -5,7 +5,7 @@ var botID = process.env.BOT_ID;
 
 function respond() {
   var request = JSON.parse(this.req.chunks[0]),
-      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/
+      botRegex = /^\/cool guy/;  botRegexDL = /^\/DDL/i;botRegexSalt = /^\/salt/;botRegexRules = /^\/rules/; botRegexRoll = /^\/roll/;
       botRegexAd=/^\/advance/;botRegexGTA = /^\/gta/; botRegexSC = /^\/SDL/i; botODB = /(.*\s+)(.*odb)(\s+.*)/i; botDuck = /^\/duck/;
       botRegexP = /^\/PDL/i;  botRegexTw = /^\/twitch/i; botRegexSb = /^\/sub/; botRegexSh = /^\/shrug/; botRegexWk = /^\/users/; botRegexCC = /^\/cc/;
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; 
@@ -165,7 +165,11 @@ function respond() {
     postMessage("http://daddyleagues.com/ptsl/schedules");
     this.res.end();
   }
-  
+  else if(request.text && botRegexRoll.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://photobucket.com/images/eye%20roll%20gif");
+    this.res.end();
+  }
   else if(request.text && botRegexSiege.test(request.text)) {
     this.res.writeHead(200);
     if(0.6 >= Math.random() > 0.3)

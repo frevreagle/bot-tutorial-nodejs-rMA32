@@ -105,7 +105,7 @@ function respond() {
     this.res.writeHead(200);
     postMessage("http://i3.kym-cdn.com/photos/images/facebook/000/787/356/d6f.jpg");
     this.res.end();
-  } 
+  }  
   else if(request.text && botRegexBrye.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/600x490.jpeg.b31d5153fb474d9bb18dd51b3d650afe.large");

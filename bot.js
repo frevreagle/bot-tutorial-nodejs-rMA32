@@ -53,7 +53,7 @@ function respond() {
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/; botRegexUMadBro = /^\/umadbro/; botRegexBoo = /^\/boo/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/; botRegexbg=/^\/bg/;
       botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/; botRegexGolf = /^\/golf/; 
-      botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/; botRegexEat = /^\/eat/; 
+      botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/; botRegexEat = /^\/eat/; botRegexpush = /^\/push/; 
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
       boo1 = 'https://media.giphy.com/media/iSxPmDWr97248/giphy.gif'; boo2 = 'https://media.giphy.com/media/l0MYwwrc7uYibZVn2/giphy.gif';
@@ -69,6 +69,11 @@ function respond() {
   else if(request.text && botRegexSlut.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
+    this.res.end();
+  } 
+  else if(request.text && botRegexpush.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.imgur.com/xkfjkha.png");
     this.res.end();
   } 
   else if(request.text && botRegexGolf.test(request.text)) {

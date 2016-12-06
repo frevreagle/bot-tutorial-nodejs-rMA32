@@ -1,6 +1,6 @@
 var HTTPS = require('https');
 var cool = require('cool-ascii-faces');
-var arrBrettFacts = new Array(13);
+var arrBrettFacts = new Array(17);
   arrBrettFacts[0] = "Brett Gladden is one handsome motherfucker.";
   arrBrettFacts[1] = "Brett Gladden is the master of the BBQ Smoker.";
   arrBrettFacts[2] = "Brett Gladden holds the record for being awesome at things.";
@@ -14,7 +14,11 @@ var arrBrettFacts = new Array(13);
   arrBrettFacts[10] = "Brett Gladden fucks.";
   arrBrettFacts[11] = "Brett Gladden loves Mondays.";
   arrBrettFacts[12] = "Brett Gladdens middle name is a mystery, even to him.";
-
+  arrBrettFacts[13] = "Brett Gladden's middle name is a mystery, even to him.";
+  arrBrettFacts[13] = "Brett Gladden never remembers the Titans.";
+  arrBrettFacts[14] = "Brett Gladden can like, totally delete the league. So like, don't upset him";
+  arrBrettFacts[15] = "Brett Gladden is a friend of the mexicans.";
+  arrBrettFacts[16] = "Brett Gladden's only fear is fear itself. And spiders.";
 var botID = process.env.BOT_ID;
 
 function respond() {

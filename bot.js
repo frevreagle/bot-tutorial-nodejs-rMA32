@@ -77,6 +77,11 @@ function respond() {
     postMessage("Dawks has never won a playoff game yet spends 80 hours a week running free practice...");
     this.res.end();
   }
+  else if(request.text && /redskins/.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Hail To The Redskins. /r/n/r/nP.S. Kirk Cousins for MVP!");
+    this.res.end();
+  }
   else if(request.text && /batman/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Send Batman back to Mehico");

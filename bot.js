@@ -58,6 +58,7 @@ function respond() {
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
       boo1 = 'https://media.giphy.com/media/iSxPmDWr97248/giphy.gif'; boo2 = 'https://media.giphy.com/media/l0MYwwrc7uYibZVn2/giphy.gif';
       boo3 = 'https://media.giphy.com/media/3otPoK3GsKT4ZtvRqE/giphy.gif';
+  
   var teamAb = ["NE","NO","ARI","PHI","CLE","TEN","OAK","DAL","IND","SEA","CIN","PIT","JAC"
                 ,"BAL","SD","DEN","MIN","ATL","KC","NYG","GB","DET","HOU","STL","CHI","CAR",
                 "MIA","BUF","SF","WAS","NYJ","TB"]
@@ -169,11 +170,7 @@ function respond() {
     postMessage("http://www.hackcollege.com/wp-content/uploads/2013/02/kno_advance.jpg");
     this.res.end();
   }
-  else if(request.text && request.text.test(/conrad/)) {
-    this.res.writeHead(200);
-    postMessage("Conrad is one mad Canadian");
-    this.res.end();
-  } 
+
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
     postMessage("http://daddyleagues.com/ptsl/rules");

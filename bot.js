@@ -67,6 +67,11 @@ function respond() {
     postMessage(cool());
     this.res.end();
   }
+  else if(request.text && /\/canada/.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Canada is spelled with a capital you dumb fucks.");
+    this.res.end();
+  }
   else if(request.text && /\/conrad/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Conrad is one mad Canadian (notice the capital 'C')");

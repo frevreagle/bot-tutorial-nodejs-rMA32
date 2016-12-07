@@ -82,6 +82,11 @@ function respond() {
     postMessage("Send Batman back to Mehico");
     this.res.end();
   }
+  else if(request.text && /jeff/i.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("I see you mentioned that legend that is Jeff. You could only be so lucky to suck his dick.");
+    this.res.end();
+  }
    else if(request.text && /Trill/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Trill is Eddie Winslow's younger brother");

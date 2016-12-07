@@ -72,6 +72,11 @@ function respond() {
     postMessage("Canada is spelled with a capital you dumb fucks.");
     this.res.end();
   }
+  else if(request.text && /\/help/.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://vignette1.wikia.nocookie.net/creation/images/f/fa/Best-rick-roll-gif-577.gif/revision/latest?cb=20160515183412");
+    this.res.end();
+  }
   else if(request.text && /\/conrad/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Conrad is one mad Canadian (notice the capital 'C')");

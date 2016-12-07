@@ -74,7 +74,7 @@ function respond() {
   }
   else if(request.text && /\/help/.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("http://vignette1.wikia.nocookie.net/creation/images/f/fa/Best-rick-roll-gif-577.gif/revision/latest?cb=20160515183412");
+    postMessage("https://media.giphy.com/media/bFqUob1sn7g9q/giphy.gif");
     this.res.end();
   }
   else if(request.text && /\/conrad/.test(request.text)) {

@@ -74,7 +74,7 @@ function respond() {
   }
   else if(request.text && /dawks/.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Dawks has never won a playoff game yet spends 80 hours a week running free practice...");
+    postMessage("Correction: Dawks has one a playoff game. He still sucks.");
     this.res.end();
   }
   else if(request.text && /redskins/.test(request.text)) {

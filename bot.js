@@ -72,6 +72,21 @@ function respond() {
     postMessage("Conrad is one mad Canadian (notice the capital 'C')");
     this.res.end();
   }
+  else if(request.text && /batman/.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Send Batman back to Mehico");
+    this.res.end();
+  }
+   else if(request.text && /Trill/.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Trill is Eddie Winslow's younger brother");
+    this.res.end();
+  }
+  else if(request.text && /colby/.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Colby's sister is one fine ass lady");
+    this.res.end();
+  }
   else if(request.text && botRegexSlut.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");

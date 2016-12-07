@@ -79,7 +79,7 @@ function respond() {
   }
   else if(request.text && /\/redskins/.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Hail To The Redskins. /r/n/r/nP.S. Kirk Cousins for MVP!");
+    postMessage("Hail To The Redskins. P.S. Kirk Cousins for MVP!");
     this.res.end();
   }
   else if(request.text && /\/batman/.test(request.text)) {

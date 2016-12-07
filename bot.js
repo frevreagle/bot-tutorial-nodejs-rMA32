@@ -67,37 +67,37 @@ function respond() {
     postMessage(cool());
     this.res.end();
   }
-  else if(request.text && /conrad/.test(request.text)) {
+  else if(request.text && /\/conrad/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Conrad is one mad Canadian (notice the capital 'C')");
     this.res.end();
   }
-  else if(request.text && /dawks/.test(request.text)) {
+  else if(request.text && /\/cdawks/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Correction: Dawks has one a playoff game. He still sucks.");
     this.res.end();
   }
-  else if(request.text && /redskins/.test(request.text)) {
+  else if(request.text && /\/credskins/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Hail To The Redskins. /r/n/r/nP.S. Kirk Cousins for MVP!");
     this.res.end();
   }
-  else if(request.text && /batman/.test(request.text)) {
+  else if(request.text && /\/cbatman/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Send Batman back to Mehico");
     this.res.end();
   }
-  else if(request.text && /jeff/i.test(request.text)) {
+  else if(request.text && /\/cjeff/i.test(request.text)) {
     this.res.writeHead(200);
     postMessage("I see you mentioned that legend that is Jeff. You could only be so lucky to suck his dick.");
     this.res.end();
   }
-   else if(request.text && /Trill/.test(request.text)) {
+   else if(request.text && /\/cTrill/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Trill is Eddie Winslow's younger brother");
     this.res.end();
   }
-  else if(request.text && /colby/.test(request.text)) {
+  else if(request.text && /\/ccolby/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Colby's sister is one fine ass lady");
     this.res.end();

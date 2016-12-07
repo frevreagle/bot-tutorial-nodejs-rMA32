@@ -105,14 +105,10 @@ function respond() {
   }
    else if(request.text && /\/Trill/.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Trill mad as well at something rn.");
+    postMessage("Trill mad as hell at something rn.");
     this.res.end();
   }
-  else if(request.text && /josh/.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("Sim the next Super Bowl that Josh is in.");
-    this.res.end();
-  }
+  
   else if(request.text && /zach/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("We don't speak of him in here.");

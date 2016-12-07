@@ -72,6 +72,11 @@ function respond() {
     postMessage("Conrad is one mad Canadian (notice the capital 'C')");
     this.res.end();
   }
+  else if(request.text && /dawks/.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Dawks has never won a playoff game yet spends 80 hours a week running free practice...");
+    this.res.end();
+  }
   else if(request.text && /batman/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Send Batman back to Mehico");

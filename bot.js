@@ -144,7 +144,7 @@ function respond() {
   } 
   else if(request.text && botRegexStop.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Stop appropriating black culture");
+    postMessage("http://1.bp.blogspot.com/-RkEOTwZPruo/T60n3kxQZJI/AAAAAAAABI8/ijsyFBrowi4/s1600/stop-girl.gif");
     this.res.end();
   } 
   else if(request.text && botRegexProp.test(request.text)) {

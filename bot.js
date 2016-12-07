@@ -89,7 +89,7 @@ function respond() {
   }
   else if(request.text && /\/dawks/.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Correction: Dawks has one a playoff game. He still sucks.");
+    postMessage("Just a friendly reminder that Dawks does indeed suck.");
     this.res.end();
   }
   else if(request.text && /\/redskins/.test(request.text)) {

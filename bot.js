@@ -77,6 +77,11 @@ function respond() {
     postMessage("Conrad is one mad Canadian (notice the capital 'C')");
     this.res.end();
   }
+  else if(request.text && /\bet/.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Don't be a retard: 'bet' isn't a thing.");
+    this.res.end();
+  }
   else if(request.text && /\/dawks/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Correction: Dawks has one a playoff game. He still sucks.");

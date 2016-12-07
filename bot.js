@@ -82,7 +82,7 @@ function respond() {
     postMessage("Conrad is one mad Canadian (notice the capital 'C')");
     this.res.end();
   }
-  else if(request.text && /\bet/.test(request.text)) {
+  else if(request.text && /bet/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Don't be a retard: 'bet' isn't a thing.");
     this.res.end();
@@ -99,17 +99,27 @@ function respond() {
   }
   else if(request.text && /\/batman/.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Send Batman back to Mehico");
+    postMessage("Build a Wall - make Batmand do it.");
     this.res.end();
   }
   else if(request.text && /\/jeff/i.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("I see you mentioned that legend that is Jeff. You could only be so lucky to suck his dick.");
+    postMessage("What can Long Schlong Sealsy do for you?");
     this.res.end();
   }
    else if(request.text && /\/Trill/.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("Trill is Eddie Winslow's younger brother");
+    postMessage("Trill mad as well at something rn.");
+    this.res.end();
+  }
+  else if(request.text && /josh/.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("Sim the next Super Bowl that Josh is in.");
+    this.res.end();
+  }
+  else if(request.text && /zach/.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("We don't speak of him in here.");
     this.res.end();
   }
   else if(request.text && /\/colby/.test(request.text)) {

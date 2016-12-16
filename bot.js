@@ -52,7 +52,7 @@ function respond() {
       botRegexSiege = /^\/siege/; botRegexOW = /^\/ratings/; botRegexCat = /^\/catfish/; botRegexCool = /^\/cool/; botRegexBouncy = /^\/bouncy/;
       botRegexSlut = /^\/slut/; botRegexStop = /^\/stop/; botRegexUMadBro = /^\/umadbro/; botRegexBoo = /^\/boo/; botRegexOzzy = /^\/ozzy/;
       botRegexProp = /^\/prop/;botRegexKys = /^\/kys/; botRegexSlam = /^\/slam/; botRegexBrye = /^\/brye/; botRegexbg=/^\/bg/;
-      botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/; botRegexGolf = /^\/golf/; 
+      botRegexGian = /^\/gian/; botRegexScrotes = /^\/scrotes/; botRegexShaki = /^\/shaki/; botRegexGolf = /^\/golf/; botRegexThanksMadden = /^\/thanksmadden/; botRegexJeff = /^\/jeff/
       botRegexDaf = /^\/dafuq/; botRegexAyy = /^\/ayy/; botRegexSchedule = /^\/schedule/; botRegexEat = /^\/eat/; botRegexpush = /^\/push/; 
       siege1 = 'https://i.groupme.com/350x419.png.adc8c73a6c1547e0a9e04320296329f8'; siege2 = 'https://i.groupme.com/1279x752.jpeg.aa5d0401e0df495bba4b4e09dc5a6bd7'
       siege3 = 'https://i.groupme.com/960x960.png.006e180e05d841c6a2962e844bf1e6fd';
@@ -77,6 +77,7 @@ function respond() {
     postMessage("https://media.giphy.com/media/bFqUob1sn7g9q/giphy.gif");
     this.res.end();
   }
+  
   else if(request.text && /\/conrad/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Conrad is one mad Canadian (notice the capital 'C')");
@@ -98,11 +99,7 @@ function respond() {
     postMessage("Build a Wall - make Batmand do it.");
     this.res.end();
   }
-  else if(request.text && /\/jeff/i.test(request.text)) {
-    this.res.writeHead(200);
-    postMessage("What can Long Schlong Sealsy do for you?");
-    this.res.end();
-  }
+  
    else if(request.text && /\/Trill/.test(request.text)) {
     this.res.writeHead(200);
     postMessage("Trill mad as hell at something rn.");
@@ -119,11 +116,16 @@ function respond() {
     postMessage("Colby's sister is one fine ass lady");
     this.res.end();
   }
+    else if(request.text && botRegexSlut.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
+    this.res.end();
+  }
   else if(request.text && botRegexSlut.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://i.groupme.com/640x364.jpeg.f8a0e216bf7e42ed9a86b3ae23cc2ff1.large");
     this.res.end();
-  } 
+  }
    else if(request.text && botRegexOzzy.test(request.text)) {
    this.res.writeHead(200);
    postMessage("Ozzy beat JP.");
@@ -173,6 +175,11 @@ function respond() {
   else if(request.text && botRegexSlam.test(request.text)) {
     this.res.writeHead(200);
     postMessage("https://pbs.twimg.com/profile_images/587294731471757313/ZpI5PfKq.jpg");
+    this.res.end();
+  } 
+   else if(request.text && botRegexJeff.test(request.text)) {
+    this.res.writeHead(200);
+    postMessage("http://i.gifntext.com/lxORxUTuPQ-thanks-all-madden.gif");
     this.res.end();
   } 
   else if(request.text && botRegexDaf.test(request.text)) {
